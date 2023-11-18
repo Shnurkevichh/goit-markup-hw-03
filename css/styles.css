@@ -175,6 +175,8 @@ img{
         margin-right: auto;
         margin-left: auto;
         border-radius: 4px;
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+            padding: 16px 32px;
 }
 
 .button:hover,
@@ -205,7 +207,7 @@ img{
         font-weight: 500;
         line-height: 1.2;
         letter-spacing: 0.02em;
-        text-align: center
+        padding-top: 32px;
 }
 
 .section-text{
@@ -264,12 +266,9 @@ img{
     gap: 24px;
 }
 
-.team-item{
-    padding-top: 32px;
-}
 
-.team-text{
-    justify-content: center;
+.team-text-container{
+   text-align: center;
 }
 /* ===========/THIRD SECTION========== */
 
@@ -281,17 +280,27 @@ img{
     column-gap: 24px;
     row-gap: 48px;
     flex-direction: row;
+    padding-left: 0;
 }
 
 .portfolio-list-item{
-    width: calc((100%-48px)/3);
+width: calc((100%-48px)/3);
+}
+
+
+.title-text-container {
+    padding-left: 16px;
+    border: 1px solid var(--CORNFLOWER, #E7E9FC);
+    border-top: none;
 }
 /* ==========/FOURTH SECTION========== */
 
 
 /* ==========FOOTER========== */
-.footer{
+.main-footer{
     background: var(--NAVY-BLUE, #2E2F42);
+    padding-top: 100px;
+    padding-bottom: 100px;;
 }
 
 .logo-footer{
@@ -310,5 +319,12 @@ img{
         font-weight: 400;
         line-height: 1.5;
         letter-spacing: 0.02em;
+        width: 264px;;
 }
+
+.logo-end{
+    display: inline-block;
+margin-bottom: 16px;
+}
+
 /* ==========/FOOTER========== */
